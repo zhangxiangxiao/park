@@ -49,7 +49,8 @@ def main(argv=None):
                 model_file=model_file, data_file=args.data_file)
             logging.info('Executing %s.', perplexity)
             process = subprocess.run(
-                perplexity, shell=True, capture_output=True)
+                perplexity, shell=True, stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT)
             result = RESULT.format(
                 data_name=args.data_name, model_name=model_name, quant=quant)
             logging.info('Write result to %s.', result)
