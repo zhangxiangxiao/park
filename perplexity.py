@@ -6,7 +6,7 @@ import logging
 
 
 PERPLEXITY = 'local/bin/perplexity -ngl 1000000 -m {model_file} -f {data_file}'
-RESULT = 'perplexity/{data_name}_{model_name}_{quant}.txt'
+RESULT = 'result/perplexity/{data_name}_{model_name}_{quant}.txt'
 
 # Model names and files.
 MODELS = {
