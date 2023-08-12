@@ -53,7 +53,7 @@ def main(argv=None):
             result = RESULT.format(
                 data_name=args.data_name, model_name=model_name, quant=quant)
             logging.info('Write result to %s.', result)
-            result_fd = open(result, 'w')
+            result_fd = open(result, 'wb')
             result_fd.write(process.stdout)
             result_fd.close()
 
