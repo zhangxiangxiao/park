@@ -12,7 +12,13 @@ RESULT = 'perplexity/wikitext-2_{model_name}_{quant}.txt'
 # Model location.
 MODELS = {
     'llama-7b': 'models/llama/LLaMa-7B-GGML/llama-7b.ggmlv3.{quant}.bin',
+    'llama-13b': 'models/llama/LLaMa-13B-GGML/llama-13b.ggmlv3.{quant}.bin',
+    'llama-30b': 'models/llama/LLaMa-30B-GGML/llama-30b.ggmlv3.{quant}.bin',
+    'alpaca-lora-30b': 'models/alpaca/Alpaca-Lora-30B-GGML/Alpaca-Lora-30B.ggmlv3.{quant}.bin',
     'llama-2-7b': 'models/llama-2/Llama-2-7B-GGML/llama-2-7b.ggmlv3.{quant}.bin',
+    'llama-2-13b': 'models/llama-2/Llama-2-13B-GGML/llama-2-13b.ggmlv3.{quant}.bin',
+    'llama-2-7b-chat': 'models/llama-2/Llama-2-7B-Chat-GGML/llama-2-7b-chat.ggmlv3.{quant}.bin',
+    'llama-2-13b-chat': 'models/llama-2/Llama-2-13B-chat-GGML/llama-2-13b-chat.ggmlv3.{quant}.bin',
 }
 
 # List of quantization methods.
